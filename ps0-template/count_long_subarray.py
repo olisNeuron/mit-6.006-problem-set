@@ -9,7 +9,7 @@ def count_long_subarray(A):
     ##################
     # YOUR CODE HERE #
     ##################
-    for i in range(1,len(A)):
+    for i in range(1, len(A)):
         if A[i] > A[i-1]:
             current_length += 1
         else:
@@ -19,6 +19,5 @@ def count_long_subarray(A):
             max_length = current_length
             count = 1
         elif current_length == max_length:
-            count+=1
+            count += 1
     return count
-
